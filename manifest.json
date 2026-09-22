@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "Cua 表单助手",
+  "version": "0.1.0",
+  "description": "识别当前网页的表单字段，预览匹配结果后填写。",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "content_security_policy": {"extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"},
+  "action": {"default_popup": "popup.html"}
+}

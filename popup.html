@@ -1,0 +1,5 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="style.css"><title>Cua 表单助手</title></head>
+<body><main><header><span class="mark">C</span><div><h1>Cua 表单助手</h1><p>检查匹配结果，再填写当前页面</p></div></header>
+<section><label for="profile">填写资料</label><p class="hint">每行一个“字段: 内容”。支持姓名、邮箱、电话、公司、地址等常见字段，也可写页面上的字段名。</p><textarea id="profile" spellcheck="false" placeholder="姓名: 张三&#10;邮箱: zhang@example.com&#10;电话: 13800138000"></textarea><label class="option"><input id="overwrite" type="checkbox">覆盖页面上已有的内容（再次填写时使用）</label><div class="row"><button id="save" class="secondary">保存资料</button><button id="scan">扫描当前页面</button></div></section>
+<section><div class="section-head"><h2>匹配预览</h2><span id="count"></span></div><div id="results" class="results empty">打开表单网页后，点击“扫描当前页面”。</div><button id="fill" disabled>填写匹配字段</button><p class="hint">不会自动提交表单。密码、验证码、支付信息及隐藏字段会跳过。</p></section><div id="status" role="status" aria-live="polite"></div></main><script src="vendor/ort.min.js"></script><script src="model/inference.js"></script><script src="popup.js"></script></body></html>
